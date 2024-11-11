@@ -23,7 +23,7 @@
 
           // メソッドを定義する
           public function show_price(){
-            return $this->price;
+            echo $this->price;
           }
          }
  
@@ -33,6 +33,10 @@
          // インスタンス$Foodの各プロパティの値を出力する
          print_r($Food);
          echo "<br>";
+         // メソッドを実行する
+         $Food->show_price();
+         echo "<br>";
+
 
          class Animal {
           // プロパティを定義する                        
@@ -49,7 +53,7 @@
 
           // メソッドを定義する
           public function show_height(){
-            return $this->height;
+            echo $this->height;
           }
         }
 
@@ -60,10 +64,9 @@
         print_r($Animal);
         echo "<br>";
 
-        echo $Food->show_price();
+        // メソッドを実行する
+        $Animal->show_height();
         echo "<br>";
-
-        echo $Animal->show_height();
      ?>
     </p>
 </body>
